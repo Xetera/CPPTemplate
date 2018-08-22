@@ -11,7 +11,7 @@ gen_header () {
 }
 
 if ! hash touch 2> /dev/null; then
-    echo -e "\e[31m[ERROR] \e[0mAre you running on a linux VM? Your system doesn't seem to have a 'touch' command."
+    echo -e "\e[31m[ERROR] \e[0mAre you running on a linux VM or using cygwin? Your system doesn't seem to have a 'touch' command."
     exit 1
 fi
 

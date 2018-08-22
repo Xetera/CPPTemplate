@@ -24,13 +24,8 @@ else
     exit 1
 fi
 
-# remove the IO file if found
-if [[ -f "terminalIO.txt" ]]; then
-    rm "terminalIO.txt"
-fi
-
-# Basic header stuff
-echo "Output for HW at [$date]" >> terminalIO.txt
+# Truncate existing file and overwrite
+echo "Output for HW at [$date]" > terminalIO.txt
 echo "\$ $program" >> terminalIO.txt
 
 # Don't want to redirect all output to a file, just copy it over

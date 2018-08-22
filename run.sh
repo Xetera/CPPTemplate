@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
-if ! hash script 2> /dev/null; then
-    echo -e "\e[31m[ERROR] \e[0mAre you running on a linux VM or using cygwin? Your system doesn't seem to have a 'script' command."
-    exit 1
-fi
+
+check_available () {
+    if ! hash "$1" 2> /dev/null; then
+        echo -e "\e[31m[ERROR] \e[0mAre you running on a linux VM or using cygwin? Your system doesn't seem to have a '$1' command."
+        exit 1
+    fi
+}
+
+check_available "date"
+check_available "tee"
 
 date=$( date +%Y-%m-%d )
 

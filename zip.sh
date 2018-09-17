@@ -17,7 +17,7 @@ fi
 echo -e "\e[36m[INFO] \e[0mZipping..."
 
 {
-    tar -czf $filename src include Makefile terminalIO.txt
+    tar -czf $filename src include Makefile *.scr
     echo -e "\e[32m[SUCCESS] \e[0mZipped files successfully!"
     } || {
     echo -e "\e[31m[ERROR] \e[0mThere was a problem with the zipping..."

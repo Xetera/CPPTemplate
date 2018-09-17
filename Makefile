@@ -1,10 +1,14 @@
-CXXFLAGS=-g -Wall -pedantic-errors -Iinclude
+CXX=g++
+CXXFLAGS=-g -Wall -Wextra -pedantic-errors -Iinclude
 OUT=bin/program
 SOURCE=$(wildcard src/*.cpp)
 
 all:
-	@echo -e "\e[38mCompiling...\e[0m"
-	g++ $(SOURCE) -o $(OUT) $(CXXFLAGS)
+	@echo "Compiling with the following command:"
+	$(CXX) $(SOURCE) -o $(OUT) $(CXXFLAGS)
 
 clean:
-	rm bin/*
+	find . -name "*.scr" -type f -delete
+	find . -name "*.tar.gz" -type f -delete
+	rm bin/* 
+

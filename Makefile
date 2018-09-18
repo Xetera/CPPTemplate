@@ -2,13 +2,13 @@ CXX=g++
 CXXFLAGS=-g -Wall -Wextra -pedantic-errors -Iinclude
 OUT=bin/program
 SOURCE=$(wildcard src/*.cpp)
+OBJECTS=$(SOURCE:.cpp=.o)
 
-all:
-	@echo "Compiling with the following command:"
-	$(CXX) $(SOURCE) -o $(OUT) $(CXXFLAGS)
+$(OUT): $(OBJECTS)
+	$(CXX) $(OBJECTS) -o $(OUT)
+
+%.o: %.cpp
+	$(CXX) -c $(CXXFLAGS) $< -o $@
 
 clean:
-	find . -name "*.scr" -type f -delete
-	find . -name "*.tar.gz" -type f -delete
-	rm bin/* 
-
+	rm -f $(OUT) $(OBJECTS)

@@ -1,3 +1,4 @@
 *.exe
 *.tar.gz
 *.txt
+*.o

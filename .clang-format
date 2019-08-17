@@ -12,8 +12,6 @@ AllowShortFunctionsOnASingleLine: Empty
 BreakBeforeTernaryOperators: true
 BraceWrapping:
   BeforeElse: true
-# haskell style
-BreakInheritanceList: BeforeComma
 Cpp11BracedListStyle: false
 IncludeBlocks: Merge
 IndentWrappedFunctionNames: false
@@ -21,9 +19,6 @@ CommentPragmas: "^ TODO:"
 SortIncludes: true
 SortUsingDeclarations: true
 SpaceAfterCStyleCast: true
-SpaceBeforeCtorInitializerColon: true
 SpaceBeforeAssignmentOperators: true
-SpaceBeforeRangeBasedForLoopColon: false
-SpaceBeforeInheritanceColon: true
 SpaceBeforeParens: Never
 PointerAlignment: Left

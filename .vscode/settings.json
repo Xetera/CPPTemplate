@@ -1,0 +1,10 @@
+{
+  // "background.enabled": true,
+  // "C_Cpp.default.cppStandard": "c++17",
+  // "c-cpp-flylint.clang.extraArgs": ["-Wno-c++98-compat"],
+  // "clang.completion.enable": true,
+  // "clang.cxxflags": ["-std=c++17", "-Iinclude"],
+  // "C_Cpp.default.includePath": ["${workspaceRoot}"],
+  // "clang-format.language.cpp.enable": true,
+  "editor.fontFamily": "'Overpass Mono', 'Fira Code Retina', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'"
+}

@@ -1,5 +1,6 @@
 *.exe
 *.tar.gz
 *.txt
+!CMakeLists.txt
 *.o
 .idea
